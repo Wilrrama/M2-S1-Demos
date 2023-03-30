@@ -1,0 +1,16 @@
+.header__container {
+  height: 55px;
+  width: 100vw;
+
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+}
+
+.header__title {
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 26px;
+}
