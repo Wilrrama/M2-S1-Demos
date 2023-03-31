@@ -1,5 +1,5 @@
 .filter__container {
-  margin-top: 50px;
+  margin-top: 105px;
 
   display: flex;
   align-items: center;
@@ -71,4 +71,41 @@
   padding: 7px 13px;
 
   align-self: flex-end;
+}
+
+.cart__container {
+  margin-left: 50px;
+  padding-right: 50px;
+  width: 290px;
+  height: 246px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart__header {
+  background-color: var(--primary);
+  color: var(--text-secondary);
+  width: 290px;
+  height: 50px;
+
+  border-radius: var(--radius-cart);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.cart__header > img {
+  width: 32px;
+}
+
+.cart__header > figcaption {
+  font-size: 20px;
+}
+
+.cart__empty {
+  font-size: 18px;
+  text-align: center;
 }

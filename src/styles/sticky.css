@@ -1,0 +1,25 @@
+.descriptions__container {
+  margin: 400px auto;
+  padding: 150px;
+
+  width: 900px;
+  height: 1500px;
+
+  border: 1px solid;
+
+  text-align: center;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.descriptions__text {
+  height: 400px;
+}
+
+.descriptions__more {
+  height: 55px;
+  position: sticky;
+  top: 50px;
+  bottom: 50px;
+}

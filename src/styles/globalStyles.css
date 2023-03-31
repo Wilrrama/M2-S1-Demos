@@ -19,19 +19,23 @@ body {
   background-color: var(--background);
   color: var(--text-primary);
   padding: 0 128px;
+  z-index: 2;
 }
 
 .header__container {
   height: 55px;
   width: 100vw; /* VW - Viewport Width*/
 
-  background-color: var(--background);
+  background-color: var(--primary);
 
   display: flex;
   align-items: center;
   justify-content: center;
 
   box-shadow: var(--shadow);
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .header__title {
