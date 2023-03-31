@@ -1,3 +1,74 @@
-@import url(./reset.css);
-@import url(./header.css);
-@import url(./globalStyles.css);
+.filter__container {
+  margin-top: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter__buttons {
+  display: flex;
+  gap: 32px;
+}
+
+.search__container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.main__container {
+  margin-top: 100px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.list__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+
+  /* display: flex;
+  gap: 32px;
+  flex-wrap: wrap; */
+}
+
+.list__item {
+  border: 1px solid;
+
+  padding: 32px;
+  border-radius: var(--radius);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+  width: 370px;
+}
+
+.list__item > figure > figcaption {
+  margin-top: 64px;
+}
+
+.list__item > figure > img {
+  width: 271px;
+  height: 175px;
+}
+
+.list__item > ol {
+  align-self: flex-start;
+
+  list-style: decimal;
+
+  padding-left: 32px;
+}
+
+.list__item > button {
+  font-size: 10px;
+
+  padding: 7px 13px;
+
+  align-self: flex-end;
+}

@@ -2,62 +2,126 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/globalStyles.css">
     <link rel="stylesheet" href="./src/styles/index.css">
-    <title>Shop Now - Demo 02</title>
+
+    <title>Shop Now</title>
 </head>
 
 <body>
+
+    <!-- BEM - BLOCK ELEMENT MODIFIER -->
     <header class="header__container">
         <h1 class="header__title">Shop Now</h1>
     </header>
 
-    <nav class="nav__container">
-        <section class="nav__buttons">
-            <button class="button_primary">Todos os produtos</button>
-            <button class="button_primary">Hortifuiti</button>
-            <button class="button_primary">Panificadora</button>
-            <button class="button_primary">Laticínios</button>
-        </section>
+    <section class="filter__container">
+        <div class="filter__buttons">
+            <button>Todos os Produtos</button>
+            <button>Hortifruti</button>
+            <button>Panificadora</button>
+            <button>Laticínios</button>
+        </div>
+        <div class="search__container">
+            <input type="text" placeholder="Pesquisar por..." />
+            <img class="search__button" src="./src/assets/search.svg" alt="lupa" />
+        </div>
+    </section>
 
-        <section>
-            <input type="text" placeholder="Pesquisar por...">
-            <img src="" alt="lupa">
-        </section>
-
-    </nav>
-
-    <main>
-        <ul>
-            <li>
+    <main class="main__container">
+        <ul class="list__container">
+            <li class="list__item">
                 <figure>
-                    <img src="" alt="">
-                    <figcaption> Hortifuiti</figcaption>
-                    <ol>
-                        <li>Potássico</li>
-                        <li>Vitamina C</li>
-                        <li>Vitamina B6</li>
-                        <li>Folatos</li>
-                    </ol>
-                    <button>comprar</button>
-
+                    <img src="./src/assets/banana.svg" alt="banana" />
+                    <figcaption>Hortifruti</figcaption>
                 </figure>
+                <ol>
+                    <li>Potássio</li>
+                    <li>Vitamina C</li>
+                    <li>Vitamina B6</li>
+                    <li>Folatos</li>
+                </ol>
+                <button>comprar</button>
+            </li>
+            <li class="list__item">
+                <figure>
+                    <img src="./src/assets/morango.svg" alt="morango" />
+                    <figcaption>Hortifruti</figcaption>
+                </figure>
+                <ol>
+                    <li>Potássio</li>
+                    <li>Vitamina C</li>
+                    <li>Vitamina B6</li>
+                    <li>Folatos</li>
+                </ol>
+                <button>comprar</button>
+            </li>
+            <li class="list__item">
+                <figure>
+                    <img src="./src/assets/maca.svg" alt="maça" />
+                    <figcaption>Hortifruti</figcaption>
+                </figure>
+                <ol>
+                    <li>Potássio</li>
+                    <li>Vitamina C</li>
+                    <li>Vitamina B6</li>
+                    <li>Folatos</li>
+                </ol>
+                <button>comprar</button>
+            </li>
+            <li class="list__item">
+                <figure>
+                    <img src="./src/assets/pao.svg" alt="pão" />
+                    <figcaption>Hortifruti</figcaption>
+                </figure>
+                <ol>
+                    <li>Potássio</li>
+                    <li>Vitamina C</li>
+                    <li>Vitamina B6</li>
+                    <li>Folatos</li>
+                </ol>
+                <button>comprar</button>
+            </li>
+            <li class="list__item">
+                <figure>
+                    <img src="./src/assets/leite.svg" alt="leite" />
+                    <figcaption>Hortifruti</figcaption>
+                </figure>
+                <ol>
+                    <li>Potássio</li>
+                    <li>Vitamina C</li>
+                    <li>Vitamina B6</li>
+                    <li>Folatos</li>
+                </ol>
+                <button>comprar</button>
             </li>
         </ul>
-    </main>
-    <aside>
-        <figure> <img src="" alt="carrinho">
-            <figcaption>carrinho</figcaption>
-            <section>
-                <figure>
+        <aside class="cart__container">
+            <figure class="cart__header">
+                <img src="" alt="carrinho">
+                <figcaption>Carrinho</figcaption>
+            </figure>
+            <section class="cart__products">
+                <figure class="cart__empty">
                     <img src="" alt="sacola de compras">
-                    <figcaption>Por Enquanto não temos produtos no carrinho</figcaption>
+                    <figcaption>Por enquanto não temos produtos no carrinho</figcaption>
                 </figure>
             </section>
-        </figure>
-    </aside>
+        </aside>
+    </main>
 </body>
 
 </html>
